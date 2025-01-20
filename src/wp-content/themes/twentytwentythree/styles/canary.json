@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
 	"version": 2,
 	"title": "Canary",
 	"settings": {
@@ -187,6 +187,11 @@
 						"color": "var(--wp--preset--color--contrast)",
 						"style": "solid",
 						"width": "2px"
+					}
+				},
+				":visited": {
+					"color": {
+						"text": "var(--wp--preset--color--base)"
 					}
 				},
 				"border": {
