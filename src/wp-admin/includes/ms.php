@@ -249,19 +249,18 @@ function upload_is_user_over_quota( $display_message = true ) {
 
 /**
  * Displays the space usage details by the current site.
- * 
  *
- * This function echoes the space usage information retrieved from the 
+ * This function echoes the space usage information retrieved from the
  * `get_space_usage` function, wrapped in a `<strong>` HTML tag for emphasis.
  *
  * @return void This function does not return a value; it outputs the space usage directly.
- * 
+ *
  * @see get_space_usage() for the function that retrieves the space usage information.
- * 
+ *
  * @since MU (3.0.0)
  */
 function display_space_usage() {
-    echo '<strong>' . get_space_usage() . '</strong>';
+	echo '<strong>' . get_space_usage() . '</strong>';
 }
 
 /**
@@ -271,18 +270,17 @@ function display_space_usage() {
  * The notice is styled as a success message and is dismissible. It uses the `display_space_usage`
  * function to retrieve and display the actual storage usage details.
  *
- * 
+ * @see get_space_usage() for the function that retrieves the space usage information.
+ *
  * @hook admin_notices
  *
  * @return void This function does not return a value; it directly outputs HTML.
- * 
- * @see get_space_usage() for the function that retrieves the space usage information.
  */
 function display_space_usage_notice() {
-    echo '<div class="notice notice-success is-dismissible">';
-    echo '<p><strong>' . esc_html__( 'Storage Space' ) . ':</strong> ';
-    echo get_space_usage();
-    echo '</p></div>';
+	echo '<div class="notice notice-success is-dismissible">';
+	echo '<p><strong>' . esc_html__( 'Storage Space' ) . ':</strong> ';
+	echo get_space_usage();
+	echo '</p></div>';
 }
 
 /**
