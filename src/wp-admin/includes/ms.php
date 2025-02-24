@@ -322,7 +322,7 @@ function fix_import_form_size( $size ) {
 function upload_space_setting( $id ) {
 	switch_to_blog( $id );
 	$quota = get_option( 'blog_upload_space' );
-	
+
 	if ( ! $quota ) {
 		$quota = '';
 	}
