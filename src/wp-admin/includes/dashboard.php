@@ -1650,7 +1650,7 @@ function wp_dashboard_quota() {
 	$used = get_space_used();
 
 	$used_class = '';
-	if ( !  get_site_option( 'upload_space_check_disabled' ) ) {
+	if ( ! get_site_option( 'upload_space_check_disabled' ) ) {
 		$quota = get_space_allowed();
 		if ( $used > $quota ) {
 			$percentused = '100';
@@ -1666,7 +1666,7 @@ function wp_dashboard_quota() {
 	<h3 class="mu-storage"><?php _e( 'Storage Space' ); ?></h3>
 	<div class="mu-storage">
 	<ul> 
-	    <?php if ( isset( $quota ) ) : ?>
+	<?php if ( isset( $quota ) ) : ?>
 		<li class="storage-count">
 			<?php
 			$text = sprintf(
@@ -1683,7 +1683,7 @@ function wp_dashboard_quota() {
 			);
 			?>
 		</li>
-	    <?php endif; ?>
+	<?php endif; ?>
 		<li class="storage-count <?php echo $used_class; ?>">
 			<?php
 			printf(
