@@ -2695,11 +2695,11 @@ function upload_size_limit_filter( $size ) {
  * Retrieves the space usage details for the site.
  *
  * This function calculates and returns the space used for uploads in the site.
- * If the upload space check is disabled, it returns a simple message showing the 
- * space used. Otherwise, it provides more detailed information including the 
+ * If the upload space check is disabled, it returns a simple message showing the
+ * space used. Otherwise, it provides more detailed information including the
  * percentage of space used and the total space allowed.
  *
- * @return string Formatted string indicating space usage. The format depends on 
+ * @return string Formatted string indicating space usage. The format depends on
  *                whether the upload space check is enabled or not.
  */
 function get_space_usage() {
