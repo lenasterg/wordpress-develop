@@ -284,18 +284,16 @@ function display_space_usage_notice() {
 }
 
 /**
- *
- * It hooks into the `load-upload.php` action to add the 
+ * Hooks into the `load-upload.php` action to add the
  * `display_space_usage_notice` function to the `admin_notices` hook.
  *
- * 
  * @hook load-upload.php
  *
  * @return void This function does not return a value; it only adds an action to the `admin_notices` hook.
  */
 function upload_page_notice_display_space_usage_notice() {
-    // Add the admin_notices action only for the upload.php page
-    add_action('admin_notices', 'display_space_usage_notice');
+	// Add the admin_notices action only for the upload.php page
+	add_action( 'admin_notices', 'display_space_usage_notice' );
 }
 
 /**
@@ -341,7 +339,7 @@ function upload_space_setting( $id ) {
 				/* translators: Hidden accessibility text. */
 				_e( 'Size in megabytes' );
 				?>
-			</span><?php printf( '(Leave blank for network default: %s MB)',  get_site_option( 'blog_upload_space' ) ); ?></span>
+			</span><?php printf( '(Leave blank for network default: %s MB)', get_site_option( 'blog_upload_space' ) ); ?></span>
 			<p class="description blog-upload-space-count">
 			<?php echo get_space_usage(); ?>
 			</p>
