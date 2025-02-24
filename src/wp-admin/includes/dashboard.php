@@ -1633,7 +1633,7 @@ function wp_dashboard_primary_output( $widget_id, $feeds ) {
  * Runs on the {@see 'activity_box_end'} hook in wp_dashboard_right_now().
  *
  * This function checks the space used and the space allowed for uploads on the site,
- * then displays this information in the dashboard with a link to manage uploads. 
+ * then displays this information in the dashboard with a link to manage uploads.
  * It also includes a visual warning if the space usage exceeds 70% of the allowed quota.
  *
  * @since 3.0.0
